@@ -3,7 +3,7 @@ dotenv.config()
 
 import express from "express";
 
-// import router from './routes/router.js';
+import router from './routes/router.js';
 import cors from 'cors'
 
 
@@ -19,7 +19,7 @@ app.use(
     })
 );
 app.use(express.json())
-// app.use(router);
+app.use(router);
 
 app.listen(process.env.port)
 console.log("Port listening on "+process.env.port);
