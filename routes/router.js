@@ -10,7 +10,7 @@ const router = Router();
 
 
 // AUTH ROUTES
-router.post('/api/v1/login',login)
+router.post('/api/login',login)
 
 
 export default router;
